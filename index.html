@@ -24,20 +24,20 @@
         <div class="grid grid-cols-1 sm:grid-cols-3 gap-6">
 
             <div class="bg-gray-100  rounded-xl p-6 ">
-                <p class="text-black text-xl">Total </p>
-                <p class=" text-2xl font-bold text-black mt-2">0</p>
+                <p  class="text-black text-xl">Total </p>
+                <p id="total-count" class=" text-2xl font-bold text-black mt-2">0</p>
             </div>
 
             <!-- Interview -->
             <div class=" bg-gray-100  rounded-xl p-6 ">
                 <p class=" text-xl">Interviews</p>
-                <p class="text-2xl font-bold text-green-500 mt-2">0</p>
+                <p id="interview-count" class="text-2xl font-bold text-green-500 mt-2">0</p>
             </div>
 
             <!-- Rejected -->
             <div class="bg-gray-100  rounded-xl p-6 ">
                 <p class="text-xl">Rejected</p>
-                <p class="text-2xl font-bold text-red-500 mt-2">0</p>
+                <p id="rejected-count" class="text-2xl font-bold text-red-500 mt-2">0</p>
             </div>
 
         </div>
@@ -52,13 +52,13 @@
             <h2 class="text-2xl font-bold text-blue-950">
                 Available Jobs
             </h2>
-            <p id="totalJob" class="text-gray-500">
+            <p id="total-job" class="text-gray-500">
                 0 jobs
             </p>
         </div>
 
         <!-- Filter Buttons -->
-        <div class="flex gap-3 flex-wrap">
+        <div id="filter-section" class="flex gap-3 flex-wrap">
             <button id="all-filter-button" class="bg-blue-500 text-white px-5 py-2 rounded-lg ">
                 All
             </button>
