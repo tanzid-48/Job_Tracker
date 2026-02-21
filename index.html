@@ -7,7 +7,61 @@
         <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 <body>
-     <h1 class="text-amber-300 text-7xl text-center">hello</h1>
+    
+    <!-- <header class=" w-[80%] mx-auto space-y-6">
+        <div class="">
+            <h1 class=" text-4xl text-blue-950 font-bold">Job Application Tracker</h1>
+        </div>
+        <div class=" w-11/12 grid grid-cols-3 gap-4">
+            <div class="total px-7 bg-gray-100 py-4 ">
+                <p>Total</p>
+                <p class="text-black">0</p>
+            </div>
+            <div class="interview px-7 bg-gray-100 py-4">
+                <p>Interview</p>
+                <p class="text-green-400">0</p>
+            </div>
+            <div class="rejected px-7 bg-gray-100 py-4">
+                <p>Rejected</p>
+                <p class="text-red-500">0</p>
+            </div>
+        </div>
+
+        <hr class=" mt-9 text-gray-200">
+    </header> -->
+
+        
+    <header class="w-[90%] max-w-6xl mx-auto space-y-8 py-8">
+    <div>
+        <h1 class="text-4xl md:text-5xl font-bold text-blue-950">
+            Job Application Tracker
+        </h1>
+    </div>
+
+    <!-- Stats Cards -->
+    <div class="grid grid-cols-1 sm:grid-cols-3 gap-6">
+
+        <div class="bg-gray-100  rounded-xl p-6 ">
+            <p class="text-black text-xl">Total </p>
+            <p class=" text-2xl font-bold text-black mt-2">0</p>
+        </div>
+
+        <!-- Interview -->
+        <div class=" bg-gray-100  rounded-xl p-6 ">
+            <p class=" text-xl">Interviews</p>
+            <p class="text-2xl font-bold text-green-500 mt-2">0</p>
+        </div>
+
+        <!-- Rejected -->
+        <div class="bg-gray-100  rounded-xl p-6 ">
+            <p class="text-xl">Rejected</p>
+            <p class="text-2xl font-bold text-red-500 mt-2">0</p>
+        </div>
+
+    </div>
+
+    <hr class="mt-6 border-gray-200">
+</header>
 
      <script src="script.js"></script>
 </body>
