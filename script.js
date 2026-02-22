@@ -90,8 +90,8 @@ mainContainer.addEventListener('click', function (event) {
         jobTitle,
         jobType,
         jobInfo,
-         status: "Interview",
-         jobP
+        status: "Interview",
+        jobP
     };
     //  exist check
     let JobExist = interviewList.find(item => item. jobTitle === jobTitle);
@@ -105,36 +105,39 @@ mainContainer.addEventListener('click', function (event) {
  calculatedCount();
  renderInterview();
 
+//  rejected Button Click
+
+ }else if (event.target.classList.contains('rejected-btn')){
+
+     parentNode.querySelector('.status').innerText = "Rejected";
+
+    let cardInfo = {
+        jobTitle,
+        jobType,
+        jobInfo,
+        status: "Rejected",
+        jobP
+    };
+    //  exist check
+    let JobExist = rejectedList.find(item => item. jobTitle === jobTitle);
+ if(!JobExist){
+    rejectedList.push(cardInfo);
+ }
+//  rejected theke remove
+
+ interviewList = interviewList.filter(item => item. jobTitle !== jobTitle);
+
+ calculatedCount();
+ renderInterview();
+
+ } else if(event.target.classList.contains('delete-btn')){
+ 
+    parentNode.remove();
+
+    interviewList = interviewList.filter(item => item.jobTitle !== jobTitle);
+    rejectedList = rejectedList.filter(item => item.jobTitle !== jobTitle);
+    calculatedCount();
+
  }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
