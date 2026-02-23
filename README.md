@@ -52,6 +52,10 @@ querySelectorAll returns all elements matching a CSS selector as a nodelist.
 
 **Answer:**
 
+let newElement = document.createElement('p');
+newElement.innerText = "change the text"
+body.appendChild(newElement);
+
 
 
 <!-- End of answer -->
@@ -63,9 +67,9 @@ querySelectorAll returns all elements matching a CSS selector as a nodelist.
 <!-- Write your answer below this line -->
 
 **Answer:**
-
-
-
+If I click a button, first the button’s event works.
+Then the event goes to its parent element.
+After that, it goes to the parent’s parent, and it continues like this up to the body and html.
 <!-- End of answer -->
 
 ---
@@ -75,7 +79,8 @@ querySelectorAll returns all elements matching a CSS selector as a nodelist.
 <!-- Write your answer below this line -->
 
 **Answer:**
-
+Event Delegation in JavaScript means we do not need to add an event listener to every button or item. We just add one event listener on the parent, and it can handle all child events.
+so that work first,write to less code ,code more efficenci,new button add more
 
 
 <!-- End of answer -->
@@ -87,7 +92,9 @@ querySelectorAll returns all elements matching a CSS selector as a nodelist.
 <!-- Write your answer below this line -->
 
 **Answer:**
+preventDefault() → stops the browser’s default action.
 
+stopPropagation() → stops the event from moving to parent elements.
 
 
 <!-- End of answer -->
